@@ -10,7 +10,8 @@ public class Main {
         driver.get("http://www.google.com");
         driver.manage().window().maximize();
         driver.findElement(By.xpath("//*[@id=\"L2AGLb\"]/div")).click();
-        driver.findElement(By.xpath("//*[@id=\"input\"]")).sendKeys("Amazon");
+        driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input")).sendKeys("Amazon");
+        //driver.findElement(By.xpath("//*[@id=\"icon\"]")).click();
         driver.quit();
 
     }
