@@ -7,6 +7,8 @@ public class Main {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\checd\\OneDrive\\Pulpit\\Webdriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.google.com");
+        driver.manage().window().maximize();
         driver.quit();
+
     }
 }
